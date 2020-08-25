@@ -1,0 +1,14 @@
+logging:
+  level:
+    org.springframework.web: debug
+    io:
+      swagger:
+        models:
+          parameters:
+            AbstractSerializableParameter: ERROR
+  pattern:
+    console: "{date:%d{yyyy-MM-dd HH:mm:ss.SSS} , log_id:%X{GUID}} , jwt_user:%X{jwt_user} , [%thread] , %-5level , %logger{36} , %msg%n"
+    file: "{date:%d{yyyy-MM-dd HH:mm:ss.SSS} , log_id:%X{GUID}} , %X{jwt_user} , [%thread] , %-5level , %logger{36} , %msg%n"
+  file:
+    name: /home/resource/logs/bankele.log
+

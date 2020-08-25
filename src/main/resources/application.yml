@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: bankele
+  profiles:
+    active: db-dev,logging-dev
+
+server:
+  port: 9889
+  error:
+    include-stacktrace: always
+
+
+
+
+
